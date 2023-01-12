@@ -1,5 +1,12 @@
 
 Run `nix develop` to drop into a shell with the needed wine and winetricks.
+Make sure to have previously put the options
+```
+hardware.opengl.driSupport = true;
+hardware.opengl.driSupport32Bit = true;
+```
+in your NixOS config to make sure you have Vulkan support installed in Mesa.
+
 Then follow the comments. Reproduced here:
 (replace nathan with your user, both in these commands and in the flake)
 ```
